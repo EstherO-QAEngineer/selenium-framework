@@ -10,7 +10,7 @@ Feature: Account Management
 
     Examples:
       | FirstName | LastName | Email           | Password  | ConfirmPassword |
-      | Betty     | Golden   | betty1@gmail.com | Betty200$ | Betty200$       |
+      | Betty     | Golden   | betty@gmail.com | Betty200$ | Betty200$       |
 
   @SignIn
   Scenario Outline: Account Login with username and password
@@ -22,7 +22,7 @@ Feature: Account Management
 
     Examples:
       | Email           | Password  |
-      | betty1@gmail.com | Betty200$ |
+      | betty@gmail.com | Betty200$ |
 
 @DuplicateAccount
   Scenario Outline: Create Account - Duplicate Account creation not allowed
@@ -61,7 +61,7 @@ Feature: Account Management
 
     Examples:
       | Email           | Password  |
-      | betty1@gmail.com | Betty200! |
+      | betty@gmail.com | Betty200! |
 
 
 
