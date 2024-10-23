@@ -22,18 +22,10 @@ public class Hooks {
         driver.get("https://magento2-demo.magebit.com");
     }
 
-
-
-
-
     @After
     public void afterScenario(){
-       // driver.close();
-        // driver.quit();
-
-
+       driver.close();
+       driver.quit();
     }
-
-
 
 }
